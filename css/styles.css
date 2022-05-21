@@ -1,8 +1,9 @@
 :root {
-    --primary-font-family: font-family: 'Roboto', sans-serif;
-    --secondary-font-family: font-family: 'Raleway', sans-serif;
+    --primary-font-family: 'Roboto', sans-serif;
+    --secondary-font-family: 'Raleway', sans-serif;
     --primary-text-color: #212121;
     --secondary-text-color: #757575;
+    --thirdty-text-color: #ffffff;
     --accent-color: #2196F3;
     --footer-background-color: #2F303A;
     --primary-background-color: #ffffff;
@@ -58,7 +59,6 @@ body {
 .tell-list-link,
 .address-list-link,
 .skils-list-text{
-    font-family: var(--primary-font-family);
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -67,7 +67,6 @@ body {
 }
 .team-title,
 .activity-title {
-    font-family: var(--primary-font-family);
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
@@ -99,17 +98,15 @@ body {
     background-color: var(--footer-background-color);
 }
 .hero-title {
-    font-family: var(--primary-font-family);
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: #FFFFFF
+    color: var(--thirdty-text-color)
 }
 .hero-btn {
-    font-family: var(--primary-font-family);
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
@@ -117,7 +114,7 @@ body {
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
-    color: #FFFFFF;
+    color: var(--thirdty-text-color);
     background-color:  #2196F3;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
@@ -131,7 +128,6 @@ body {
 /*=========================SKILS=========================*/
 
 .skils-list-title {
-    font-family: var(--primary-font-family);
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -156,7 +152,6 @@ body {
     border-radius: 0px 0px 4px 4px;
 }
 .team-names {
-    font-family: var(--primary-font-family);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
@@ -165,7 +160,6 @@ body {
     color: var(--primary-text-color);
 }
 .team-profession {
-    font-family: var(--primary-font-family);
     font-weight: 400;
     font-size: 16px;
     line-height: 1.19;
@@ -179,7 +173,6 @@ body {
     background-color: var(--secondary-background-color);
 }
 .work-nav-btn {
-    font-family: var(--primary-font-family);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.63;
@@ -192,14 +185,13 @@ body {
 }
 .work-nav-btn:hover,
 .work-nav-btn:focus {
-    color: #FFFFFF;
+    color: var(--thirdty-text-color);
     background-color: var(--accent-color);
 }
 .cards-list-items {
     background-color: var(--primary-background-color);
 }
 .cards-title {
-    font-family: var(--primary-font-family);
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
@@ -207,7 +199,6 @@ body {
     color: var(--primary-text-color);
 }
 .cards-text {
-    font-family: var(--primary-font-family);
     font-weight: 400;
     font-size: 16px;
     line-height: 1.88;
@@ -220,10 +211,10 @@ body {
     background: var(--footer-background-color);
 }
 .footer-logo {
-    color: #ffffff;
+    color: var(--thirdty-text-color)
 }
 .address-list-link {
-    color: #FFFFFF;
+    color: var(--thirdty-text-color)
 }
 .tell-list-link,
 .email-list-link {
