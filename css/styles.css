@@ -27,15 +27,17 @@ body {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    color: var(--primary-text-color)
-}
-.social-list-links {
-    color: var(--secondary-text-color);
 }
 .nav-list-links:hover,
 .nav-list-links:focus,
 .social-list-links:hover,
-.social-list-links:focus {
+.social-list-links:focus,
+.email-list-link:hover,
+.email-list-link:focus,
+.tell-list-link:hover,
+.tell-list-link:focus,
+.address-list-link:hover,
+.address-list-link:focus {
     color: var(--accent-color);
 }
 .logo {
@@ -46,11 +48,44 @@ body {
     letter-spacing: 0.03em;
 }
 .logo-first-part {
-    color: #2196F3;
-    ;
+    color: var(--accent-color);
+}
+.skils-title,
+.work-title {
+    opacity: 0;
+}
+.email-list-link,
+.tell-list-link,
+.address-list-link,
+.skils-list-text{
+    font-family: var(--primary-font-family);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+.team-title,
+.activity-title {
+    font-family: var(--primary-font-family);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
 }
 /*=========================/COMPONENTS=========================*/
 /*=========================HEADER=========================*/
+.nav-list-links {
+    color: var(--primary-text-color)
+}
+.active {
+    color: var(--accent-color);
+}
+.social-list-links {
+    color: var(--secondary-text-color);
+}
 .header {
     background-color: var(--primary-background-color);
 }
@@ -94,9 +129,7 @@ body {
 }
 /*=========================/HERO=========================*/
 /*=========================SKILS=========================*/
-.skils-title {
-    opacity: 0;
-}
+
 .skils-list-title {
     font-family: var(--primary-font-family);
     font-weight: 700;
@@ -107,37 +140,15 @@ body {
     color: var(--primary-text-color);
 }
 .skils-list-text {
-    font-family: var(--primary-font-family);
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
     color: var(--secondary-text-color);
 }
 /*=========================/SKILS=========================*/
 /*=========================ACTIVITY=========================*/
-.activity-title {
-    font-family: var(--primary-font-family);
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: var(--primary-text-color);
-}
+
 /*=========================/ACTIVITY=========================*/
 /*=========================TEAM=========================*/
 .team {
     background-color: var(--secondary-background-color);
-}
-.team-title {
-    font-family: var(--primary-font-family);
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: var(--primary-text-color);
 }
 .team-list-items {
     background: var(--primary-background-color);
@@ -151,19 +162,59 @@ body {
     line-height: 1.19;
     text-align: center;
     letter-spacing: 0.03em;
-    color: #212121;
+    color: var(--primary-text-color);
 }
 .team-profession {
-    font-family: 'Roboto';
-    font-style: normal;
+    font-family: var(--primary-font-family);
     font-weight: 400;
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
     letter-spacing: 0.03em;  
-    color: #757575;
+    color: var(--secondary-text-color);
 }
 /*=========================/TEAM=========================*/
+/*=========================PORTFOLIO=========================*/
+.main-portfolio {
+    background-color: var(--secondary-background-color);
+}
+.work-nav-btn {
+    font-family: var(--primary-font-family);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.63;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+    background: var(--secondary-background-color);
+    border-radius: 4px;
+    cursor: pointer;
+}
+.work-nav-btn:hover,
+.work-nav-btn:focus {
+    color: #FFFFFF;
+    background-color: var(--accent-color);
+}
+.cards-list-items {
+    background-color: var(--primary-background-color);
+}
+.cards-title {
+    font-family: var(--primary-font-family);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--primary-text-color);
+}
+.cards-text {
+    font-family: var(--primary-font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+    color: var(--secondary-text-color);
+}
+/*=========================/PORTFOLIO=========================*/
 /*=========================FOOTER=========================*/
 .footer {
     background: var(--footer-background-color);
@@ -172,30 +223,10 @@ body {
     color: #ffffff;
 }
 .address-list-link {
-    font-family: var(--primary-font-family);
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71; 
-    letter-spacing: 0.03em;
     color: #FFFFFF;
 }
+.tell-list-link,
 .email-list-link {
-    font-family: var(--primary-font-family);
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);
-}
-.tell-list-link {
-    font-family: var(--primary-font-family);
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
 }
 /*=========================/FOOTER=========================*/
