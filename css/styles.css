@@ -53,14 +53,15 @@ body {
 }
 .skils-title,
 .work-title {
-    opacity: 0;
+    display: none;
+}
+.address {
+    font-style: normal;
 }
 .email-list-link,
 .tell-list-link,
 .address-list-link,
 .skils-list-text{
-    font-style: normal;
-    font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
@@ -107,6 +108,7 @@ body {
     color: var(--thirdty-text-color)
 }
 .hero-btn {
+    font-family: inherit;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
@@ -160,7 +162,6 @@ body {
     color: var(--primary-text-color);
 }
 .team-profession {
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
@@ -169,10 +170,8 @@ body {
 }
 /*=========================/TEAM=========================*/
 /*=========================PORTFOLIO=========================*/
-.main-portfolio {
-    background-color: var(--secondary-background-color);
-}
 .work-nav-btn {
+    font-family: inherit;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.63;
@@ -199,7 +198,6 @@ body {
     color: var(--primary-text-color);
 }
 .cards-text {
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.03em;
